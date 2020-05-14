@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App input {
+  position: absolute;
+	width: 20%;		
+	border: 2px solid black;
+	float: left;
+	margin-left: 40%;
+  top: 16px;
+  height:25px;
+
+}
