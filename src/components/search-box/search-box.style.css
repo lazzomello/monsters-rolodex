@@ -1,4 +1,4 @@
-.search {
+.search input{
   -webkit-appearance: none;
   border: none;
   outline: none;
@@ -6,5 +6,9 @@
   width: 150px;
   line-height: 30px;
   margin-bottom: 30px;
-  margin:0 auto;
+  text-align:center;
+}
+
+div{
+  text-align:center;
 }
