@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import CardList from './components/card-list/card-list.component'
-import SearchField from './components/SearchField/SearchField.component'
+import Searchbox from './components/search-box/search-box.component'
 class App extends Component {
 
   constructor(props){
@@ -17,6 +17,11 @@ class App extends Component {
     this.setState({monsters:data})
   }
   
+  handleChange=e=>{
+    this.setState({
+      searchField:e.target.value
+    })
+  }
    
    
   render(){
@@ -27,7 +32,7 @@ class App extends Component {
 
   return (
     <div className="App">
-      <input onChange={e=>this.setState({searchField:e.target.value})} type="search" placeholder="Search monster"/>
+      <Searchbox handleChange={this.handleChange} placeholder='Search box'/>
       <CardList monsters={monstersFiltered}/>
     </div>
   );
